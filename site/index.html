@@ -4,11 +4,26 @@
 <head>
     <meta charset="utf-8">
     <title>Meus bichinhos</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"
 </head>
 
-<body>
 
+
+<body>
+    <header>Meus bichinhos</header>
+    <main>
+        <div class="Pesquisa">
+            <label>Pesquise o nome do bichinho</label><input class="nome" type="text" id="pesquisa">
+            <button onclick="retornaBichinho(event)">Pesquisar</button>
+            <button onclick="daltonismoProtanopia(event)">Modo daltonico: Protanopia</button>
+        </div>
+        <div class="ListaItens" id="lista"></div>
+    </main>
+    <footer><div class="textoFooter">
+        © Pyter Ávila 2022  https://github.com/PYTERODACTYL
+        </div>
+    </footer>
 </body>
 
 </html>
